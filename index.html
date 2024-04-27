@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css links -->
+    <link rel="stylesheet" href="./css//bootstrap.css" />
+    <link rel="stylesheet" href="./css//bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Burger Factory</title>
+  </head>
+  <body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Burger Factory</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+			<li class="cart"><a href="#" class="cart-count"><span>0</span><i class="fa-solid fa-cart-shopping" onclick="openAside()"></i></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+   
+
+    <!-- end navbar -->
+    <!-- start cart -->
+    <aside>
+      <div class="icon">
+        <i class="fa-solid fa-x" onclick="closeAside()"></i>
+      </div>
+      <div id='cart ' class='cart w-100 h-auto'>
+
+      <div class="container d-flex justify-content-center align-items-center flex-column mt-5">
+          <div class="row text-center">
+              <div class="col-lg-12">
+                  <h1 class='special-heading my-5  p-5'>
+  Cart
+                  </h1>
+              </div>
+          </div>
+  
+     <table class="table table-striped">
+          <thead>
+            <tr>
+            <th scope='col'>Id</th>
+                    <th scope='col'>Image</th>
+                    <th scope='col'>Name</th>
+                    <th scope='col'>Price</th>
+                    <th scope='col'>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+           
+          
+             
+         
+          </tbody>
+        </table>
+  <div className="row my-5 p-5 text-center d-flex justify-content-center align-items-center flex-column">
+  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 total">
+
+  </div>
+  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+  <button class='btn btn-lg rounded  btn-danger my-5' onclick="deleteAll()">
+  Delete All
+  </button>
+  </div>
+  </div>
+        
+              </div>
+       
+  
+  </div>   
+    </aside>
+ 
+
+    <!-- end cart -->
+    <!-- start landing  -->
+<div class="landing p-5 " id="landing">
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <div class="row ">
+      <div class="col-12">
+<h1 class="landing-brand">
+ burger factory
+</h1>
+<p class="landing-p">
+  welcome to burger factory , enjoy your journey with this awesome products !
+</p>
+<button class="landing-btn" type="button">
+  <a href="#products">
+
+    EXPLORE  
+  </a>
+</button>
+      </div>
+    </div>
+    <div class="imgs-landing my-5">
+  
+<img src="./imgs/landingmain.jpeg" alt="burger" class="img-fluid" onclick="changeLanding(this.src)" loading="lazy">
+     
+  
+        <img src="./imgs/landingsec.jpeg" alt="burger" class="img-fluid" onclick="changeLanding(this.src)" loading="lazy">
+              
+                <img src="./imgs/landingthird.jpeg" alt="burger" class="img-fluid" onclick="changeLanding(this.src)" loading="lazy">
+                     
+    </div>
+  </div>
+</div>
+    <!-- end landing -->
+    <!-- start about -->
+<div class="about p-5 my-5" id="about">
+  <div class="container">
+<div class="row">
+  <div class="col-lg-8">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis id alias, minima vel ipsa deserunt necessitatibus ullam molestias ab eos earum quos modi cupiditate, quibusdam dolorem labore repudiandae quia esse.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis id alias, minima vel ipsa deserunt necessitatibus ullam molestias ab eos earum quos modi cupiditate, quibusdam dolorem labore repudiandae quia esse.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis id alias, minima vel ipsa deserunt necessitatibus ullam molestias ab eos earum quos modi cupiditate, quibusdam dolorem labore repudiandae quia esse.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis id alias, minima vel ipsa deserunt necessitatibus ullam molestias ab eos earum quos modi cupiditate, quibusdam dolorem labore repudiandae quia esse.</p>
+    <button class="landing-btn" type="button">
+      <a href="#products">
+    
+        EXPLORE  
+      </a>
+    </button>
+  </div>
+  <div class="col-lg-4 py-sm-2 py-xs-2">
+    <img src="./imgs/about.jpeg" alt="about" class="img-fluid about-img" loading="lazy">
+  </div>
+</div>
+  </div>
+</div>
+
+
+    <!-- end about -->
+    <!-- start products -->
+<div class="products p-5 my-5" >
+<div class="container">
+  <div class="row" id="products">
+
+  </div>
+</div>
+</div>
+
+
+    <!-- end products -->
+    <!-- start contact -->
+<div class="contact" id="contact">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 ">
+<img src="./imgs/contact.jpeg" alt="contact" class="img-fluid ">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 ">
+        <h1 class="text-center " style="color: brown;">Send Us A Message</h1>
+    <form class="form ">
+      <input type="text" name="email" id="email" placeholder="email">
+
+      <small id="email_error"></small>
+      <input type="text" name="name" id="name" placeholder="name">
+
+      <input type="password" name="password" id="password" placeholder="password">
+      <small id="password_error"></small>
+<textarea name="textarea" id="message" cols="30" rows="10"></textarea>
+      <button onclick="SignIn(event)" id="btn_sign">Send</button>
+    </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- end contact -->
+    <!-- start footer -->
+<footer class="p-5 mt-5">
+  <div class="container ">
+    <div class="row">
+      <div class="col-12">
+<h1   style="color: white;">
+ Burger Factory
+</h1>
+
+      </div>
+    
+    </div>
+    <div class="row">
+        <div class="col-12">
+        <span  style="color: white;">
+  Made With Love By <strong>ENG / AMR KHALED MAREY </strong>
+</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- end footer -->
+    <!-- js links -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("Go-F8wtSOy7rYOqzq");
+})();
+</script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
